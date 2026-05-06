@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Career Clarity</string>
+
+    <!-- Software Engineer -->
+    <string name="se_title">Software Engineer</string>
+    <string name="se_desc">Build apps, websites, and software systems.</string>
+    <string name="se_skills">Skills: Java, Kotlin, Problem Solving</string>
+    <string name="se_salary">Salary: ₹5–20 LPA</string>
+    <string name="se_roadmap">Roadmap: Learn coding → Build projects → Get job</string>
+
+    <!-- Data Analyst -->
+    <string name="da_title">Data Analyst</string>
+    <string name="da_desc">Analyze data to find insights.</string>
+    <string name="da_skills">Skills: Excel, SQL, Python</string>
+    <string name="da_salary">Salary: ₹4–15 LPA</string>
+    <string name="da_roadmap">Roadmap: Learn data tools → Practice → Apply jobs</string>
+
+    <!-- UI/UX -->
+    <string name="ui_title">UI/UX Designer</string>
+    <string name="ui_desc">Design app interfaces and user experience.</string>
+    <string name="ui_skills">Skills: Figma, Creativity</string>
+    <string name="ui_salary">Salary: ₹3–12 LPA</string>
+    <string name="ui_roadmap">Roadmap: Learn design → Build portfolio</string>
+
+</resources>

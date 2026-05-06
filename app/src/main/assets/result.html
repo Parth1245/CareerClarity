@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <div style="text-align:center; margin-bottom:10px;">
+        <h2>Career Clarity</h2>
+        <p style="color:#666;">Find your path without stress</p>
+    </div>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Career Clarity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Your Best Career Path 🎯</h2>
+
+    <div class="card">
+        <h3 id="careerTitle"></h3>
+        <p id="whyFit"></p>
+    </div>
+    <div class="container fade-in"></div>
+
+    <div class="card">
+        <h3>👀 What Your Life Will Look Like</h3>
+        <p id="dailyLife"></p>
+    </div>
+
+    <div class="card">
+        <h3>🗺️ Your Roadmap</h3>
+        <ul id="roadmap"></ul>
+    </div>
+
+    <div class="card">
+        <h3>⚖️ Backup Option</h3>
+        <p id="backup"></p>
+    </div>
+
+    <button onclick="goHome()">Go Home</button>
+
+</div>
+
+<script>
+    let result = localStorage.getItem("careerResult");
+
+    const data = {
+      tech: {
+        title: "Software Engineer 💻",
+        why: "You enjoy logic, problem-solving, and structured thinking.",
+        life: "You will spend time coding, solving real-world problems, and building apps or systems.",
+        roadmap: [
+          "Focus on Math & Logic",
+          "Learn programming (Java/Python)",
+          "Build small projects",
+          "Do internships"
+        ],
+        backup: "Data Analyst or Cybersecurity"
+      },
+      design: {
+        title: "UI/UX Designer 🎨",
+        why: "You are creative and enjoy designing and visual thinking.",
+        life: "You will design apps, websites, and improve user experiences.",
+        roadmap: [
+          "Learn design basics",
+          "Use tools like Figma",
+          "Build portfolio",
+          "Freelance or intern"
+        ],
+        backup: "Graphic Designer or Animator"
+      },
+      service: {
+        title: "Healthcare / Social Work ❤️",
+        why: "You enjoy helping people and working socially.",
+        life: "You will work directly with people and improve lives.",
+        roadmap: [
+          "Study Biology",
+          "Choose field (Doctor, Nurse, etc.)",
+          "Get degree",
+          "Gain practical experience"
+        ],
+        backup: "Psychology or Teaching"
+      }
+    };
+
+    // Fill data
+    document.getElementById("careerTitle").innerText = data[result].title;
+    document.getElementById("whyFit").innerText = data[result].why;
+    document.getElementById("dailyLife").innerText = data[result].life;
+    document.getElementById("backup").innerText = data[result].backup;
+
+    let roadmapList = "";
+    data[result].roadmap.forEach(step => {
+      roadmapList += "<li>" + step + "</li>";
+    });
+    document.getElementById("roadmap").innerHTML = roadmapList;
+
+    function goHome(){
+      window.location.href = "index.html";
+    }
+</script>
+<button onclick="goCompare()">Compare Options</button>
+
+<script>
+    function goCompare(){
+      window.location.href = "compare.html";
+    }
+</script>
+
+</body>
+</html>

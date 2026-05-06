@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Career Clarity App</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4a90e2">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<div style="text-align:center; margin-bottom:10px;">
+    <h2>Career Clarity</h2>
+    <p style="color:#666;">Find your path without stress</p>
+</div>
+
+<!-- Navbar -->
+<div class="navbar">
+    <h2>CareerClarity</h2>
+</div>
+
+<div class="container">
+
+    <h3>Hello 👋</h3>
+
+    <div class="card">
+        <p>How are you feeling today?</p>
+        <div class="mood">
+            <span>🙂</span>
+            <span>😐</span>
+            <span>😟</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <p>Career Clarity Progress</p>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <p>Quick Actions</p>
+        <button>Take Career Test</button>
+        <button>Explore Careers</button>
+    </div>
+
+    <h3>Top Career Matches</h3>
+
+    <div class="career-card">
+        <h4>Software Engineer</h4>
+        <p>Fit Score: 92%</p>
+        <button>View Details</button>
+    </div>
+
+</div>
+
+<!-- Buttons -->
+<a href="test.html">
+    <button>Start Career Test</button>
+</a>
+
+<a href="chat.html">
+    <button>Talk to AI Guide 🤖</button>
+</a>
+
+<!-- Script -->
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js');
+    }
+</script>
+
+</body>
+</html>
